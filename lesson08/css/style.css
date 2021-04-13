@@ -1,0 +1,52 @@
+form#registration {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #1E90FF;
+    border-radius: 5px;
+    padding: 20px;
+    width: 400px;
+}
+
+form#registration div {
+    margin: 2px;
+}
+
+form#registration fieldset {
+    border: none;
+    margin-bottom: 10px;
+}
+
+form#registration legend {
+    color: navy;
+    font-size: 12px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    text-shadow: 0 1px 1px #C1F7FF;
+}
+
+form#registration label {
+    float: left;
+    font-size: 10px;
+    width: 120px;
+}
+
+form#registration fieldset label {
+    background: none no-repeat left 50%;
+    line-height: 20px;
+    padding: 0 0 0 30px;
+}
+
+form#registration button {
+    background: #87CEEB;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    display: block;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    ;
+    letter-spacing: 1px;
+    margin: auto;
+    padding: 7px 25px;
+    text-shadow: 0 1px 1px #C1F7FF;
+    text-transform: uppercase;
+}
