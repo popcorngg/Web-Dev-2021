@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles/main.css" rel="stylesheet">
+    <script type="text/javascript">
+        function createImage() {
+            var canvas = document.getElementById("my_canvas");
+            var ctx = canvas.getContext("2d");
+            ctx.strokeRect(10, 10, 100, 100);
+            ctx.fillRect(20, 20, 80, 80);
+            ctx.clearRect(30, 30, 60, 60);
+
+            ctx.fillStyle = "darkred";
+            ctx.fillRect(140, 10, 200, 45);
+            ctx.fillStyle = "#14e518";
+            ctx.fillRect(150, 20, 200, 45);
+            ctx.fillStyle = "blue";
+            ctx.fillRect(160, 30, 200, 45);
+
+            ctx.fillStyle = "#14e518";
+            ctx.fillRect(40, 164, 30, 176);
+            ctx.fillStyle = "blue";
+            ctx.fillRect(40, 210, 30, 130);
+
+            ctx.fillStyle = "#14e518";
+            ctx.fillRect(90, 200, 30, 140);
+            ctx.fillStyle = "blue";
+            ctx.fillRect(90, 230, 30, 110);
+
+            ctx.fillStyle = "#14e518";
+            ctx.fillRect(140, 175, 30, 165);
+            ctx.fillStyle = "blue";
+            ctx.fillRect(140, 200, 30, 140);
+
+        }
+    </script>
+</head>
+
+<body onload="createImage();">
+    <canvas id="my_canvas" width="400" height="400"></canvas>
+
+</body>
+
+</html>
