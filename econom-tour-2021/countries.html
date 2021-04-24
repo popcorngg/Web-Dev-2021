@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Туры и путишествия от компании Супер Турист</title>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="stylesheets/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Super Tourist</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                </li>
+                <a class="nav-link" href="/countries">Страны</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Туры
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Автобусные</a>
+                        <a class="dropdown-item" href="#">Авиатуры</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Морские круизы</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Контакты</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Поиск по странам" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Поиск</button>
+            </form>
+        </div>
+    </nav>
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container-fluid text-center">
+            <h1 class="display-3">The Best Solution for Your Business</h1>
+            <p class="lead pb-4">We help you maximize performance and build a healthy organization.</p>
+            <p><a href="#" class="btn btn-primary btn-lg" role="button">Learn More</a></p>
+        </div>
+    </header>
+    <section id="services" class="container">
+        <h2 class="display-4 text-center mt-5 mb-3">Страны</h2>
+
+        <div class="row">
+            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="country" data-name="Argentina" data-continent="South America">
+                    <div class="name" title="Argentina">
+                        Аргентина
+                    </div>
+                    <div class="capital">Буенос-Айрес</div>
+                    <a href="/argentina">
+                        <img class="flag" src="https://lipis.github.io/flag-icon-css/flags/4x3/ar.svg " alt="Флаг Аргентины">
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 ">
+                <div class="country" data-name="Великобритания" data-continent="Europe">
+                    <div class="name" title="Великобритания">
+                        Великобритания
+                    </div>
+                    <div class="capital">Лондон</div>
+                    <a href="/britany">
+                        <img class="flag" src="https://lipis.github.io/flag-icon-css/flags/4x3/gb.svg " alt="Флаг Великобритании">
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 ">
+                <div class="country " data-name="Болгария>" data-continent="Europe">
+                    <div class="name" title="Болгария">
+                        Болгария
+                    </div>
+                    <div class="capital">София</div>
+                    <a href="/bulgaria"><img class="flag" src="https://lipis.github.io/flag-icon-css/flags/4x3/bg.svg" alt="Флаг Болгарии"></a>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="country" data-name="Канада" data-continent="North America">
+                    <div class="name" title="Канада">
+                        Канада
+                    </div>
+                    <div class="capital">Оттава</div>
+                    <a href="/canada"><img class="flag" src="https://lipis.github.io/flag-icon-css/flags/4x3/ca.svg" alt="Флаг Канады"></a>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="country" data-name="Дания" data-continent="Europe">
+                    <div class="name" title="Дания">
+                        Дания
+                    </div>
+                    <div class="capital">Копенгаген</div>
+                    <a href="/denmark"><img class="flag" src="https://lipis.github.io/flag-icon-css/flags/4x3/dk.svg" alt="Флаг Дании"></a>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="country" data-name="Египет>" data-continent="Africa">
+                    <div class="name" title="Египет">
+                        Египет
+                    </div>
+                    <div class="capital">Каир</div>
+                    <a href="/egypt"><img class="flag" src="https://lipis.github.io/flag-icon-css/flags/4x3/eg.svg" alt="Флаг Египта"></a>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="country" data-name="Германия" data-continent="Europe">
+                    <div class="name" title="Германия">
+                        Германия
+                    </div>
+                    <div class="capital">Берлин</div>
+                    <a href="/germany"><img class="flag" src="https://lipis.github.io/flag-icon-css/flags/4x3/de.svg " alt="Флаг Германии"></a>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 ">
+                <div class="country " data-name="Греция " data-continent="Europe">
+                    <div class="name" title="Греция">
+                        Греция
+                    </div>
+                    <div class="capital">Афины</div>
+                    <a href="/greece"><img class="flag" src="https://lipis.github.io/flag-icon-css/flags/4x3/gr.svg" alt="Флаг Греции"></a>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 ">
+                <div class="country" data-name="Италия>" data-continent="Europe">
+                    <div class="name" title="Италия">
+                        Италия
+                    </div>
+                    <div class="capital">Рим</div>
+                    <a href="/italy"><img class="flag" src="https://lipis.github.io/flag-icon-css/flags/4x3/it.svg" alt="Флаг Италии">
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="country" data-name="Япония>" data-continent="Asia">
+                    <div class="name" title="Япония">
+                        Япония
+                    </div>
+                    <div class="capital">Токио</div>
+                    <a href="/japan">
+                        <img class="flag" src="https://lipis.github.io/flag-icon-css/flags/4x3/jp.svg" alt="Флаг Японии">
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="country" data-name="США>" data-continent="North America">
+                    <div class="name" title="США">
+                        США
+                    </div>
+                    <div class="capital">Вашингтон</div>
+                    <a href="/usa">
+                        <img class="flag" src="https://lipis.github.io/flag-icon-css/flags/4x3/us.svg" alt="Флаг США">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="py-3 bg-light">
+        <div class="container">
+            <p class="text-center">Copyright &copy; Super Tourist Company 2019</p>
+        </div>
+    </footer>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>

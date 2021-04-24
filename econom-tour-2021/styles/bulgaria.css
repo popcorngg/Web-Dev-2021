@@ -1,0 +1,42 @@
+h1 {
+    text-align: center;
+    color: rgb(19, 214, 214);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 70px;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(36, 238, 238);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+}
+
+body {
+    background-color: rgb(17, 148, 148);
+    color: rgb(232, 240, 240);
+}
+
+p {
+    text-indent: 16px;
+}
+
+tr,
+td {
+    size: 20px;
+    text-align: left;
+    width: auto;
+    padding: 10px 15px;
+    border: 2px solid rgb(82, 82, 82);
+}
+
+th {
+    size: 20px;
+    padding: 10px 15px;
+    border: 2px solid rgb(82, 82, 82);
+}
+
+hr {
+    size: 3px;
+    color: rgb(0, 0, 0);
+}

@@ -1,0 +1,52 @@
+figcaption {
+    color: gray;
+    text-align: center;
+}
+
+a,
+li,
+ul {
+    text-decoration: none;
+    color: indianred;
+    size: 16px;
+    list-style-type: none;
+}
+
+h1 {
+    color: gray;
+    size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+p {
+    size: 16px;
+    color: black;
+    line-height: normal;
+}
+
+footer {
+    background-color: gray;
+    height: 30px;
+    text-align: center;
+}
+
+table {
+    width: 1000px;
+    border-collapse: collapse;
+}
+
+tr,
+td {
+    size: 16px;
+    text-align: left;
+    width: auto;
+    padding: 10px 15px;
+    border: 1px solid gray;
+}
+
+th {
+    size: 25px;
+    padding: 10px 15px;
+    border: 1px solid gray;
+}

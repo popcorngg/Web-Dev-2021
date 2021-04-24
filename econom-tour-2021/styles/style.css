@@ -1,0 +1,12 @@
+.flag {
+    border: 1px solid black;
+}
+
+.capital {
+    display: none;
+}
+
+.name {
+    text-align: center;
+    font-size: x-large;
+}
