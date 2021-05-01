@@ -21,10 +21,6 @@ html {
     font-weight: bolder;
 }
 
-#formoftour {
-    border: 2px solid black;
-}
-
 #request {
     color: rgb(46, 109, 228);
     font-size: large;
@@ -49,7 +45,6 @@ footer p {
     clear: both;
     text-align: center;
     height: 34px;
-    padding-top: 13px;
     color: white;
     width: 100%;
 }
@@ -65,7 +60,6 @@ footer p {
     background: no-repeat center/100% url(/images/header/header.jpg) rgb(160, 160, 160);
     display: inline-block;
     vertical-align: middle;
-    padding-top: 65px;
 }
 
 section p {
