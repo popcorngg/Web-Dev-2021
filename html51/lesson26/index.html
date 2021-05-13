@@ -21,7 +21,7 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-md-offset-3 col-md-7">
+            <div class="col-sm-offset-3 col-sm-6 col-md-offset-3 col-md-7">
                 <form class="form-horizontal">
                     <legend>Registration Form</legend>
                     <div class="form-group">
@@ -36,17 +36,17 @@
                     </div>
                     <div class="form-group">
                         <label for="name" class="control-label col-md-5">Вашое имя и фамилия</label>
-                        <div class="col-md-6">
-                            <input type="text" name="name" id="name" class="form-control"> </div>
+                        <div class="col-sm-7 col-md-6">
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Иван Иванов"> </div>
                     </div>
                     <div class="form-group">
                         <label for="name" class="control-label col-md-5">Компания / учебное завидение</label>
-                        <div class="col-md-6">
+                        <div class="col-ex-2 col-md-6">
                             <input type="text" name="institution" id="institution" class="form-control"> </div>
                     </div>
                     <div class="form-group">
-                        <label for="inputEmail3" class="col-sm-3 control-label">Email</label>
-                        <div class="col-md-offset-2 col-sm-6">
+                        <label for="inputEmail3" class="col-sm-2 col-md-4 control-label">Email</label>
+                        <div class="col-md-offset-1 col-sm-10 col-md-6">
                             <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
                         </div>
                     </div>
@@ -62,17 +62,44 @@
                     </div>
                     <div class="form-group">
                         <label for="name" class="control-label col-md-12">Как нам сделать конференцию более полезной и интересной?</label>
-                        <div class="col-md-offset-3 col-md-6">
-                            <textarea class="form-control" rows="4"></textarea>
+                        <div class="col-md-offset-3 col-md-8">
+                            <textarea class=" form-control" rows="4"></textarea>
                         </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="name" class="control-label col-md-5">Участие</label>
+                        <div class="col-md-6 btn-group" data-toggle="buttons">
+                            <label class=" btn btn-info">
+                                <input type="radio" id="1och" name="och"/>
+                                Очное
+                            </label>
+                            <label class="btn btn-info">
+                                <input type="radio" id="2och" name="zaoch"/>
+                                Заочное
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="name" class="control-label col-md-5">Имеется доктор наук</label>
+                        <div class="col-md-6 btn-group" data-toggle="buttons">
+                            <label class=" btn btn-info">
+                                <input type="radio" id="1dc" name="yes"/>
+                                Yes
+                            </label>
+                            <label class="btn btn-info">
+                                <input type="radio" id="2dc" name="no"/>
+                                No
+                            </label>
+                        </div>
+                    </div>
                 </form>
-                </div>
             </div>
         </div>
-        <!-- jQuery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <!-- Bootstrap JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </div>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 
 </html>
