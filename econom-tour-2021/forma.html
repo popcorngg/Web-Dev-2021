@@ -16,23 +16,23 @@
             <header class=" mainheader" style="background-image: url(images/header/header.jpg); background-size: 100%; height: 150px; background-repeat: no-repeat;">
                 <h1>ЕКОНОМ ТУР 2021</h1>
             </header>
-            <nav id="nav">
-                <a href="index.html">Главная</a>
-                <a href="countries.html">Страны</a>
-                <a href="contact.html">Контакты</a>
-                <a href="forma.html"><span class="nav-zay">Заявка на тур</span></a>
-            </nav>
-            <div id="formoftour" class="row">
-                <div class="col-xs-3">
-                    <div id="request">Заявка на тур</div>
-                    <div id="dopinfo">Заполните форму, что бы мы могли отправить вам СМС с заявкой на тур</div>
-                    <div>
-                        <form id="form">
-                            <div style="padding-left: 10%;">
-                                <input name="firstName" type="text" required="required" placeholder="Ваше ФИО*" />
-                                <input name="phone" type="tel" required="required" placeholder="Телефон">
-                                <input name="emailAddress" type="email" required="required" placeholder="Е-mail" />
-                                <select required>
+        </div>
+    </div>
+    <div class="container">
+        <nav id="nav">
+            <a href="index.html">Главная</a>
+            <a href="countries.html">Страны</a>
+            <a href="contact.html">Контакты</a>
+            <a href="forma.html"><span class="nav-zay">Заявка на тур</span></a>
+        </nav>
+        <div class="row">
+            <div style="padding-top: 40px;" class="col-xs-8 col-xs-offset-2 col-sm-offset-3 col-sm-6 col-md-offset-3 col-md-6">
+                <form class="form-horizontal">
+                    <legend style="text-align: center;">Заполните заявку на тур</legend>
+                    <div class="form-group">
+                        <label for="name" class="control-label col-sm-5">Выберете страну</label>
+                        <div class="col-sm-6" id="name">
+                            <select name="salutation" class="form-control"> 
                                 <option>Аргентина</option>          
                                 <option>Болгария</option>
                                 <option>Великобритания</option>
@@ -46,21 +46,41 @@
                                 <option>США</option>
                                 <option>Франция</option>
                                 <option>Япония</option>
-                                <option selected disabled hidden>Выберете страну</option>
-                                </select>
-                                <div>
-                                    <button class="btn btn-success" type="submit">Отправить</button>
-                                </div>
-                            </div>
-                        </form>
+                            </select>
+                        </div>
                     </div>
-                </div>
+                    <div class="form-group">
+                        <label for="inputEmail1" class="col-sm-5 control-label">Email</label>
+                        <div class="col-sm-6">
+                            <input type="email" class="form-control" id="inputEmail1" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputTel1" class="col-sm-5 control-label">Ваш номер телефона</label>
+                        <div class="col-sm-6">
+                            <input type="tel" class="form-control" id="inputTel1" placeholder="+380(98)-99-76-546">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputName1" class="col-sm-5 control-label">Имя и фамилия</label>
+                        <div class="col-sm-6">
+                            <input type="tel" class="form-control" id="inputNamr1" placeholder="Иванов Иван">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-xs-offset-3 col-xs-9 col-sm-offset-4 col-sm-8">
+                            <button class="btn btn-success" type="submit">Отправить</button>
+                        </div>
+                    </div>
+
+                </form>
+
             </div>
-            <footer>
-                <p class="text-center">Copyright © Econom Tour 2021! Всe права захищены</p>
-            </footer>
         </div>
     </div>
+    <footer>
+        <p class="text-center">Copyright © Econom Tour 2021! Всe права захищены</p>
+    </footer>
 </body>
 
 </html>
