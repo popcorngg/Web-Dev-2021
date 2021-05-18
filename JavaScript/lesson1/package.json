@@ -1,0 +1,14 @@
+{
+  "name": "package",
+  "version": "0.1.0",
+  "description": "Деонстрация 1",
+  "main": "demo01.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chikow M.",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
