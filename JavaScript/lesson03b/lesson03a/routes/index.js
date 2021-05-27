@@ -27,15 +27,10 @@ router.get('/test', function(req, res, next) {
 });
 
 router.post('/test', function(req, res, next) {
-    console.log(req.body.pole1);
-    //res.render('test-result', { title: 'Заявка' });
-});
-
-router.post('/test', function(req, res, next) {
     console.log(req.body.pole2);
-    var x = req.body.pole1 + req.body.pole2;
+    var x = Number(req.body.pole1) + Number(req.body.pole2);
     var y = req.body.pole1 - req.body.pole2;
-    res.render('test-result', { sum: x, riz: y });
+    res.render('test-result', { pole1: req.body.pole1, pole2: req.body.pole2, sum: x, riz: y });
 });
 
 /* POST booking page. */
@@ -43,13 +38,13 @@ router.post('/booking', function(req, res, next) {
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'cikovmaksim426@gmail.com ',
-            pass: 'qlbfotjcrgnfdspm'
+            user: 'andruhovski@gmail.com',
+            pass: 'freiixagxlunljhq'
         }
     });
 
     const mailOptions = {
-        from: 'cikovmaksim426@gmail.com',
+        from: 'andruhovski@gmail.com',
         to: 'andruhovski@kpnu.km.ua',
         subject: 'Заявка на тур',
         text: 'Надійшла заявка на тур від ' + req.body.username +
@@ -70,6 +65,9 @@ router.post('/booking', function(req, res, next) {
             res.render('booking-success', { title: 'Заявка' });
         }
     });
+
+
+
 });
 
 module.exports = router;
