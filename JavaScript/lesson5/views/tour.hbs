@@ -1,0 +1,21 @@
+<h1>{{titel}}</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Назва</th>
+            <th>Маршрут</th>
+            <th>Дни</th>
+            <th>Цена</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each tours}}
+        <tr>
+            <td>{{title}}</td>
+            <td>{{route}}</td>
+            <td>{{days}}</td>
+            <td>{{price}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

@@ -1,5 +1,8 @@
 var express = require('express');
 var router = express.Router();
+const Book = require('../models/book');
+const Tour = require('../models/tour');
+const Citi = require('../models/citi');
 const nodemailer = require('nodemailer');
 
 /* GET home page. */
@@ -33,7 +36,7 @@ router.post('/test', function(req, res, next) {
     var x = pole1 + pole2;
     var y = pole1 - pole2;
     var ser = (pole1 + pole2) / 2;
-    res.render('test-result', { pole1: pole1, pole2: pole2, sum: x, riz: y, ser: ser });
+    res.render('test-result', { pole1: pole1, pole2: pole2, sum: x, riz: y, ser });
 });
 
 /* POST booking page. */
@@ -73,4 +76,66 @@ router.post('/booking', function(req, res, next) {
 
 });
 
+router.get('/books', async function(req, res) {
+    try {
+        let books = await Book.find({});
+        res.send(books);
+    } catch (e) {
+        res.status(500);
+    }
+});
+
+router.get('/books-demo2', async function(req, res) {
+    try {
+        let books = await Book.find({});
+        res.render('books', {
+            title: 'Книги',
+            books: books
+        })
+    } catch (e) {
+        res.status(500);
+    }
+});
+
+router.get('/tours', async function(req, res) {
+    try {
+        let tours = await Tour.find({});
+        res.send(tours);
+    } catch (e) {
+        res.status(500);
+    }
+});
+
+router.get('/tours-demo', async function(req, res) {
+    try {
+        let tours = await Tour.find({});
+        res.render('tour', {
+            title: 'Туры',
+            tours: tours
+        })
+    } catch (e) {
+        res.status(500);
+    }
+});
+
+router.get('/cities', async function(req, res) {
+    try {
+        let cities = await city.find({});
+        res.send(cities);
+    } catch (e) {
+        res.status(500);
+    }
+});
+
+router.get('/cities-demo', async function(req, res) {
+    try {
+        let cities = await City.find({});
+        res.render('city', {
+            title: 'Города',
+            cityes: cities
+        })
+    } catch (e) {
+        res.status(500);
+    }
+});
 module.exports = router;

@@ -1,0 +1,21 @@
+<h1>{{titel}}</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Название города</th>
+            <th>Странна</th>
+            <th>Subcountry</th>
+            <th>Почтовый индекс</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each cities}}
+        <tr>
+            <td>{{name}}</td>
+            <td>{{country}}</td>
+            <td>{{subcountry}}</td>
+            <td>{{geonameid}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

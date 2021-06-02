@@ -1,0 +1,17 @@
+<h1>{{titel}}</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Автор</th>
+            <th>Назва</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each books}}
+        <tr>
+            <td>{{author}}</td>
+            <td>{{title}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
